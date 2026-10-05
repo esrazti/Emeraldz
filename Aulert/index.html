@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulert | Coming Soon to Emeraldz</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #09090b; /* Deep dark background matching modern app themes */
+            color: #fafafa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            background: linear-gradient(to right, #ffffff 0%, #a1a1aa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .tagline {
+            font-size: 1.25rem;
+            color: #a1a1aa;
+            margin-bottom: 2.5rem;
+            font-style: italic;
+        }
+        
+        .message-box {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #e4e4e7;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 1.75rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .domain-highlight {
+            color: #4facfe;
+            font-weight: 600;
+        }
+        
+        /* Simple pulsing loading ring */
+        .loader {
+            margin: 0 auto 2.5rem auto;
+            width: 48px;
+            height: 48px;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            border-top-color: #4facfe;
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Aulert</h1>
+        <p class="tagline">"Set things in order before confusion begins."</p>
+        
+        <div class="loader"></div>
+        
+        <div class="message-box">
+            We are moving our feeds, calendars, and webhooks over to <span class="domain-highlight">emeraldz.net</span>.<br><br>
+            The new Aulert dashboard will be live here shortly. Check back soon!
+        </div>
+    </div>
+</body>
+</html>
